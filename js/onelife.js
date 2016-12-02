@@ -33,11 +33,14 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Google Maps Scripts
-var map = null;
+var mapDurban = null;
+var mapWestville = null;
+
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+    mapDurban.setCenter(new google.maps.LatLng(-29.7259947, 31.0636398));
+    mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
 });
 
 function init() {
@@ -48,7 +51,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(-29.7259947, 31.0636398), // Durban
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -169,17 +172,29 @@ function init() {
 
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    var mapElementDurban = document.getElementById('mapDurban');
+    var mapElementWestville = document.getElementById('mapWestville');
 
     // Create the Google Map using out element and options defined above
-    map = new google.maps.Map(mapElement, mapOptions);
+    mapDurban = new google.maps.Map(mapElementDurban, mapOptions);
+    mapWestville = new google.maps.Map(mapElementWestville, mapOptions);
+
+    mapDurban.setCenter(new google.maps.LatLng(-29.7259947, 31.0636398));
+    mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
+    var myLatLngDurban = new google.maps.LatLng(-29.7259947, 31.0636398);
+    var myLatLngWestville = new google.maps.LatLng(-29.8279293, 30.9280703);
+
+    var beachMarkerDurban = new google.maps.Marker({
+        position: myLatLngDurban,
+        map: mapDurban,
+        icon: image
+    });
+    var beachMarkerWestville = new google.maps.Marker({
+        position: myLatLngWestville,
+        map: mapWestville,
         icon: image
     });
 }
