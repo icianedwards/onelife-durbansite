@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="One Life Church is a church in Durban - Umhlanga and Westville">
+    <meta name="description" content="One Life Church is a vibrant church that meets in Durban at The Wavehouse in Gateway Shopping Centre">
     <meta name="author" content="">
-    <meta name="keywords" content="Durban, Westville, Umhlanga, Church" />
+    <meta name="keywords" content="Durban, Umhlanga, Church, Wavehouse, Gateway" />
     <title>ONE LIFE CHURCH - DURBAN</title>
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fullPage.css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/Favicon.png" />
 
 
@@ -25,38 +26,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89966704-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="menu">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/onelifelogo.jpg" alt="One Life Logo" class="logoimg" /> One Life <span class="hide-word-if-small">Church </span><span class="light">Durban</span>
+                <a class="navbar-brand page-scroll" href="#intro">
+                    <img src="img/onelifelogo.jpg" alt="One Life Logo" class="logoimg" /> One Life <span class="hide-if-small">Church </span><span class="light">Durban</span>
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#christmas">Christmas Events</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Get in Touch</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.facebook.com/onelifedurban/" target="_blank"><img src="img/facebook.png" alt="Facebook" class="menu-icon" /></a>
-                    </li>
+                    <li data-menuanchor="meetings" class="active"><a href="#meetings">Where we meet</a></li>
+                    <li data-menuanchor="about"><a href="#about">About us</a></li>
+                    <li data-menuanchor="contact"><a href="#contact">Get in Touch</a></li>
+                    <li><a href="https://www.facebook.com/onelifedurban/" target="_blank"><img src="img/facebook.png" alt="Facebook" class="menu-icon" /></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -64,133 +65,257 @@
         <!-- /.container -->
     </nav>
     <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
+    <div id="fullpage">
+        <div class="section" data-anchor="intro" id="intro-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-0">
-                        <h1 class="brand-heading">One Life Christmas Celebrations</h1>
-                        <div class="col-md-6 event-info">
-                            <h3 class="intro-details">
-                                18 DECEMBER 10am / 7pm<br />
-                                Carols at The Barnyard<br />
-                                <span class="intro-sub-text">(booking essential)</span>
-                            </h3>
+                    <img src="img/onthemove.jpg" alt="On the Move" class="landingpageImage img-responsive" />
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="meetings" id="meetings-section">
+            <!-- layout for bigger screens -->
+            <div class="container hide-if-small">
+                <div class="row meetings-header">
+                    <div class="col-md-6 siteinfo">
+                        <h1 class="pageheader">THE WAVEHOUSE<br />GATEWAY</h1>
+                    </div>
+                    <div class="col-md-6 siteinfo text-right">
+                        <h1 class="pageheader">Sundays<br />9AM</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 siteinfo">
+                        <h1>WE'RE ON THE MOVE</h1>
+                        <p class="sitedetail">
+                            Starting on 8 January 2017, we are meeting in a temporary facility at <b>THE WAVEHOUSE</b> while our
+                            long term venue is being prepared.<br />From the beginning of March 2017, we move into the
+                            <b>NEW</b> venue which will be kitted out with the sound & lighting rig which we've
+                            acquired from The Barnyard.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 siteinfo">
+                        <div class="countdown countdown-horizontal">
+                            <div class="row text-center meetingComingUp">
+                                <div class="col-xs-3"><h3>Days</h3></div>
+                                <div class="col-xs-3"><h3>Hrs</h3></div>
+                                <div class="col-xs-3"><h3>Mins</h3></div>
+                                <div class="col-xs-3"><h3>Secs</h3></div>
+                            </div>
+                            <div class="row text-center meetingComingUp">
+                                <div class="col-xs-3"><h3><span class="spNextMeetingDays"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingHrs"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingMins"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingSecs"></span></h3></div>
+                            </div>
+                            <div class="row text-right meetingNow">
+                                <div class="col-xs-12"><span><h3>Meeting NOW ON!</h3></span></div>
+                            </div>
                         </div>
-                        <div class="col-md-5 col-md-offset-1 event-info">
-                            <h3 class="intro-details">
-                                25 DECEMBER 9am<br />
-                                Christmas Service
-                            </span>
+                        <div class="videoAnnouncement">
+                            <div class="videoWrapper">
+                                <video controls>
+                                    <source src="video/benjiWavehouseWelcome.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- layout for smaller width screens-->
+            <div class="container show-if-small-div">
+                <div class="row meetings-header">
+                    <div class="col-sm-8 siteinfo">
+                        <h1 class="pageheader">
+                            THE WAVEHOUSE, GATEWAY<br />
+                            Sundays, 9AM
+                        </h1>
+                    </div>
+                    <div class="col-sm-4 siteinfo">
+                        <div class="countdown countdown-vertical">
+                            <div class="row text-right meetingComingUp">
+                                <h3>Days: <span class="spNextMeetingDays"></span></h3>
+                                <h3>Hrs: <span class="spNextMeetingHrs"></span></h3>
+                                <h3>Mins: <span class="spNextMeetingMins"></span></h3>
+                                <h3>Secs: <span class="spNextMeetingSecs"></span></h3>
+                            </div>
+                            <div class="row text-right meetingNow">
+                                <span class="tworows"><h3>Meeting<br /> NOW ON!</h3></span>
+                                <span class="onerow"><h3>Meeting NOW ON!</h3></span>
+                            </div>
+                        </div>
+                        <div class="countdown countdown-horizontal">
+                            <div class="row text-center meetingComingUp">
+                                <div class="col-xs-3"><h3>Days</h3></div>
+                                <div class="col-xs-3"><h3>Hrs</h3></div>
+                                <div class="col-xs-3"><h3>Mins</h3></div>
+                                <div class="col-xs-3"><h3>Secs</h3></div>
+                            </div>
+                            <div class="row text-center meetingComingUp">
+                                <div class="col-xs-3"><h3><span class="spNextMeetingDays"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingHrs"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingMins"></span></h3></div>
+                                <div class="col-xs-3"><h3><span class="spNextMeetingSecs"></span></h3></div>
+                            </div>
+                            <div class="row text-right meetingNow">
+                                <div class="col-xs-12"><span><h3>Meeting NOW ON!</h3></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="col-md-9">
-                            <h1 class="brand-sub-heading">Children Welcome</h1>
-                            <a href="#christmas" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
+                    <div class="col-sm-12 siteinfo">
+                        <h1>WE'RE ON THE MOVE</h1>
+                        <p class="sitedetail">
+                            Starting on 8 January 2017, we are meeting in a temporary facility at <b>THE WAVEHOUSE</b> while our
+                            long term venue is being prepared.<br />From the beginning of March 2017, we move into the
+                            <b>NEW</b> venue which will be kitted out with the sound & lighting rig which we've
+                            acquired from The Barnyard.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 siteinfo">
+                        <div class="videoAnnouncement">
+                            <div class="videoWrapper">
+                                <video width="320" height="240">
+                                    <source src="video/videoTest.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="about" id="about-section">
+            <div class="container">
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>About One Life Church</h2>
+                            <p>
+                                One Life Church meets in a number of sites all around KZN. The church has been going since 1974 and has been in Durban since 2015.<br />
+                                The pictures will give you a bit of an introduction to who we are and what we are passionate about. Slide across to find out more about
+                                us.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/about/1.jpg" id="aboutImg1" class="img-responsive gallery-img" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/about/2.jpg" id="aboutImg2" class="img-responsive gallery-img" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/about/3.jpg" id="aboutImg3" class="img-responsive gallery-img" alt="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/about/4.jpg" id="aboutImg4" class="img-responsive gallery-img" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/about/5.jpg" id="aboutImg5" class="img-responsive gallery-img" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/about/6.jpg" id="aboutImg6" class="img-responsive gallery-img" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>One Life Church : Leaders Summit</h2>
+                            <p>
+                                Leaders Summit is happening in Pietermaritzburg on 20 / 21 January. Click on the picture below or Contact us to get more information
+                                and to register.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="http://onelifechurch.org.za/leadership-summit-17/" target="_blank">
+                                <img src="img/leadersSummit.jpg" class="img-responsive" alt="Leaders Summit" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="row event-spacer">&nbsp;</div>
-                <div class="row event-spacer">&nbsp;</div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>One Life Music : Download Music for Free</h2>
+                            <p>
+                                Get access to great resources for your church and your worship team. Click on the image below to access the resources.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="http://onelifechurch.org.za/one-life-music/" target="_blank">
+                                <img src="img/downloadWorshipMusic.jpg" class="img-responsive" alt="Download Worship Music" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Destiny Leadership Academy : Adventure | Fun | Travel</h2>
+                            <p>
+                                Destiny Leadership Academy provides young people with a focused opportunity to develop within the heart of a vibrant,
+                                Gospel-centered, mission oriented local church community. Click below for more info.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <a href="http://destiny.onelifechurch.org.za/" target="_blank">
+                                <img src="img/dlaSlider.jpg" class="img-responsive" alt="Destiny Leadership Academy" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- About Section -->
-    <section id="christmas" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1 class="brand-heading">Christmas Events</h1>
-            </div>
-            <div class="col-md-6 white-right-border">
-                <h2>Carols at The Barnyard</h2>
-                <img src="img/carolsbanner.jpg" alt="Carols at The Barnyard" class="img-responsive img-christmas" />
-                <h3>Sunday 18th December<br />10am&nbsp;&nbsp;|&nbsp;&nbsp;7pm<br />The Barnyard Theatre, Gateway</h3>
-                <h4>Free Admission<br />Book with Ruth<br />072 372 9120</h4>
-                <h4>Kids Activities<br />Dinner on Sale<br />Bring a Picnic Basket</h4>
-            </div>
-            <div class="col-md-6">
-                <h2>Christmas Services</h2>
-                <img src="img/christmas-banner.jpg" alt="Carols at The Barnyard" class="img-responsive img-christmas" />
-                <h3>Sunday 25th December</h3>
-                <div class="col-xs-6">
-                    <h3 class="no-margin">9am</h3>
-                    <h4 class="no-margin">The Barnyard Theatre, Gateway</h4>
-                    <a href="https://www.google.co.za/maps/place/Gateway+Theatre+of+Shopping/@-29.7259947,31.0636398,17z/data=!3m1!4b1!4m5!3m4!1s0x1ef705eda1cf3725:0x79206b27723ad501!8m2!3d-29.7259994!4d31.0658285?hl=en" target="_blank"><img src="img/map-logo.png" class="map-logo" alt="Directions to The Barnyard, Gateway" /></a>
-                </div>
-                <div class="col-xs-6">
-                    <h3 class="no-margin">8am</h3>
-                    <h4 class="no-margin">124 Jan Hofmeyer Road, Westville</h4>
-                    <a href="https://www.google.co.za/maps/place/124+Jan+Hofmeyer+Rd,+Westville,+3629/@-29.8279293,30.9280703,17z/data=!3m1!4b1!4m5!3m4!1s0x1ef7004e2081d405:0x9a93079c3e31b235!8m2!3d-29.827934!4d30.930259?hl=en" target="_blank"><img src="img/map-logo.png" class="map-logo" alt="Directions to Westville Site" /></a>
-                </div>
-                <div class="col-xs-12 top-margin">
-                    <h3>Great Kids Program</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Download Section -->
-    <section id="about" class="content-section text-center">
-        <div class="about-section">
+        <div class="section" data-anchor="contact" id="contact-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About One Life Durban</h2>
-                    <p>One Life Church meets in a number of sites all around KZN. In Durban we presently meet in Umhlanga and Westville. 
-                    To find out more about us click on the link below.</p>
-                    <a href="http://onelifechurch.org.za/same-church-new-name-new-horizons/" class="btn btn-default btn-lg">One Life Church<span class="hide-if-small"> site : About Us</span></a>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Contact One Life Durban</h2>
+                        <p>
+                            Feel free to get in touch for any information you need.<br />
+                            <a href="mailto:info@onelifedurban.co.za">info@onelifedurban.co.za</a><br />
+                            <a href="tel:0723729120">072 372 9120</a>
+                        </p>
+                        <ul class="list-inline banner-social-buttons">
+                            <li style="display: none">
+                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li style="display: none">
+                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@onelifedurban.co.za" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
+                            </li>
+                            <li>
+                                <a href="tel:0723729120" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">Phone</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/onelifedurban/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Join us at The Wavehouse, Gateway</h2>
+                        <div id="mapDurban"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact One Life Durban</h2>
-                <p>Feel free to get in touch for any information you need.<br />
-                    <a href="mailto:info@onelifedurban.co.za">info@onelifedurban.co.za</a><br />
-                    <a href="tel:0723729120">072 372 9120</a></p>
-                <ul class="list-inline banner-social-buttons">
-                    <li style="display: none">
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li style="display: none">
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@onelifedurban.co.za" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                    </li>
-                    <li>
-                        <a href="tel:0723729120" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">Phone</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/onelifedurban/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Map Section -->
-    <div class="map-section hide-if-small">
-        <div class="col-md-6">
-            <h2 class="no-margin"><span class="network-name">UMHLANGA</span></h2>
-            <div id="mapDurban"></div>
-        </div>
-        <div class="col-md-6">
-            <h2 class="no-margin"><span class="network-name">WESTVILLE</span></h2>
-            <div id="mapWestville"></div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; One Life Church 2016</p>
-        </div>
-    </footer>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -199,6 +324,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBEVEOrDKI7qFZoOIBrH1KbUb8-SYNZCE&sensor=false"></script>
+    <script src="js/jquery.fullPage.js"></script>
     <!-- Theme JavaScript -->
     <script src="js/onelife.js"></script>
 </body>
