@@ -6,7 +6,7 @@ var mapWestville = null;
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function () {
     mapDurban.setCenter(new google.maps.LatLng(-29.7259947, 31.0636398));
-    mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
+    // mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
 });
 
 function init() {
@@ -167,43 +167,67 @@ function init() {
 }
 
 $(document).ready(function () {
-    var isPhoneDevice = $(window).height() < 700;
-    if (isPhoneDevice) {
-        if (document.location.toString().indexOf('mobile') == -1) {
-            document.location = 'mobile.html';
-            return;
-        }
-    }
-    else {
-        if (document.location.toString().indexOf('mobile') != -1) {
-            document.location = 'index.html';
-            return;
-        }
-    }
-    //if it is not a phone device...
+    //[FULLPAGE]
     $('#fullpage').fullpage({
-        /*sectionsColor: ['#000', '#1E1F0F', '#3C3F1E', '#5A5E2D', '#787D3C', '#979D4B', '#B5BC5A', '#D3DC69', '#F1FB78'],*/
-        sectionsColor: ['#F1FB78', '#F1FB78', '#F1FB78', '#F1FB78'],
+        sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],
         anchors: ['intro', 'meetings', 'about', 'contact'],
         menu: '#menu',
+        responsiveWidth: 769,
+        responsiveHeight: 0,
         css3: true,
         scrollingSpeed: 500,
+        responsiveSlides: true,
         afterLoad: function (anchorLink, index) {
             if (anchorLink == 'intro') {
-                $('.navbar-custom').css('background-color', '#F1FB78');
-                $('.navbar-custom a').css('color', 'black');
+                $('.navbar-custom').removeClass('neo-sunset');
+                $('.navbar-custom').addClass('white-bg');
+                $('.navbar-custom a').css('color', '#333');
                 $('.navbar-custom .nav li.active a').css('color', '#F1FB78');
+                $('.navbar-toggle').css("background", "#EC612E");
+                $("#colorized-logo").css('display', 'inline-block');
+                $("#transparent-logo").css('display', 'none');
             }
             else {
-                $('.navbar-custom').css('background-color', '#1E1F0F');
-                $('.navbar-custom a').css('color', '#F1FB78');
+                $('.navbar-custom').removeClass('white-bg');
+                $('.navbar-custom').addClass('neo-sunset');
+                $('.navbar-custom a').css('color', '#FFFFFF');
                 $('.navbar-custom .nav li.active a').css('color', 'black');
+                $("#colorized-logo").css('display', 'none');
+                $("#transparent-logo").css('display', 'inline-block');
+                $('.navbar-toggle').css("background", "transparent");
             }
         }
     });
     updateNextMeetingTime();
     setTimeout(rotateImages, 3000);
 });
+
+//[SLICK]
+$('.section-slider').slick({
+    arrows: true,
+    prevArrow: ".tool-prev",
+    nextArrow: ".tool-next",
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                infinite: true,
+                dots: true,
+                arrows: false,
+                prevArrow: ".",
+                nextArrow: ".",
+            }
+        }
+    ]
+});
+
+$('.pic-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2500,
+    fade: true,
+    cssEase: 'linear'
+});
+
 var currentImageSet = 1;
 function rotateImages() {
     currentImageSet++;
@@ -226,7 +250,6 @@ function updateNextMeetingTime() {
     var startHour = 8;
     var startMinute = 0;
     var startSecond = 0;
-
     var date = new Date();
     var currentDay = date.getDay()
     var currentHour = date.getHours();
@@ -274,36 +297,36 @@ function nextDay(day, hr, min, sec) {
 
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
     // The element that is fluid width
     $fluidEl = $("body");
 
 // Figure out and save aspect ratio for each video
 $allVideos.each(function () {
-
     $(this)
-      .data('aspectRatio', this.height / this.width)
-
-      // and remove the hard coded width/height
-      .removeAttr('height')
-      .removeAttr('width');
-
+        .data('aspectRatio', this.height / this.width)
+        // and remove the hard coded width/height
+        .removeAttr('height')
+        .removeAttr('width');
 });
 
 // When the window is resized
 $(window).resize(function () {
-
     var newWidth = $fluidEl.width();
-
     // Resize all videos according to their own aspect ratio
     $allVideos.each(function () {
-
         var $el = $(this);
         $el
-          .width(newWidth)
-          .height(newWidth * $el.data('aspectRatio'));
-
+            .width(newWidth)
+            .height(newWidth * $el.data('aspectRatio'));
     });
-
     // Kick off one resize to fix all videos on page load
 }).resize();
+
+function playVideo() {
+    $('.playoverlay').css("display", 'none');
+    document.getElementById('videoOne').play();
+}
+
+function bringBackPlayButton(){
+        $('.playoverlay').css("display", 'block');
+}
