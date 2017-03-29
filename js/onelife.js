@@ -1,202 +1,19 @@
-// Google Maps Scripts
-var mapDurban = null;
-var mapWestville = null;
-
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function () {
-    mapDurban.setCenter(new google.maps.LatLng(-29.7259947, 31.0636398));
-    // mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
-});
-
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
-
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(-29.7259947, 31.0636398), // Durban
-
-        // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
-
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        /*
-        styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-        }]*/
-    };
-
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElementDurban = document.getElementById('mapDurban');
-    //var mapElementWestville = document.getElementById('mapWestville');
-
-    // Create the Google Map using out element and options defined above
-    mapDurban = new google.maps.Map(mapElementDurban, mapOptions);
-    //mapWestville = new google.maps.Map(mapElementWestville, mapOptions);
-
-    mapDurban.setCenter(new google.maps.LatLng(-29.7259947, 31.0636398));
-    //mapWestville.setCenter(new google.maps.LatLng(-29.8279293, 30.9280703));
-
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    /*var image = 'img/map-marker.png';*/
-    var myLatLngDurban = new google.maps.LatLng(-29.7259947, 31.0636398);
-    //var myLatLngWestville = new google.maps.LatLng(-29.8279293, 30.9280703);
-
-    var beachMarkerDurban = new google.maps.Marker({
-        position: myLatLngDurban,
-        map: mapDurban
-        /*icon: image*/
-    });
-    //var beachMarkerWestville = new google.maps.Marker({
-    //    position: myLatLngWestville,
-    //    map: mapWestville
-    //    /*icon: image*/
-    //});
-}
-
 $(document).ready(function () {
     //[FULLPAGE]
     $('#fullpage').fullpage({
-        sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],
-        anchors: ['intro', 'meetings', 'about', 'contact'],
         menu: '#menu',
-        responsiveWidth: 769,
-        responsiveHeight: 0,
+        navigation: false,
         css3: true,
-        scrollingSpeed: 500,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 0,
+        scrollBar: false,
+        easing: "easeInOutCubic",
+        easingcss3: "ease",
         responsiveSlides: true,
-        afterLoad: function (anchorLink, index) {
-            if (anchorLink == 'intro') {
-                $('.navbar-custom').removeClass('neo-sunset');
-                $('.navbar-custom').addClass('white-bg');
-                $('.navbar-custom a').css('color', '#333');
-                $('.navbar-custom .nav li.active a').css('color', '#F1FB78');
-                $('.navbar-toggle').css("background", "#EC612E");
-                $("#colorized-logo").css('display', 'inline-block');
-                $("#transparent-logo").css('display', 'none');
-            }
-            else {
-                $('.navbar-custom').removeClass('white-bg');
-                $('.navbar-custom').addClass('neo-sunset');
-                $('.navbar-custom a').css('color', '#FFFFFF');
-                $('.navbar-custom .nav li.active a').css('color', 'black');
-                $("#colorized-logo").css('display', 'none');
-                $("#transparent-logo").css('display', 'inline-block');
-                $('.navbar-toggle').css("background", "transparent");
-            }
-        }
+        verticalCentered: true,
+        responsiveWidth: 768
     });
     updateNextMeetingTime();
     setTimeout(rotateImages, 3000);
@@ -223,10 +40,41 @@ $('.section-slider').slick({
 
 $('.pic-slider').slick({
     autoplay: true,
+    slidesToShow: 3,
     autoplaySpeed: 2500,
-    fade: true,
-    cssEase: 'linear'
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                infinite: true,
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
+
+
+$('.main-section-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear', autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+$('.events-section-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    cssEase: 'linear', autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: ".tool-previous",
+    nextArrow: ".tool-nextous",
+});
+
 
 var currentImageSet = 1;
 function rotateImages() {
@@ -240,7 +88,6 @@ function rotateImages() {
     $('#aboutImg4').attr('src', 'img/about/' + ((currentImageSet * 6) - 2).toString() + '.jpg');
     $('#aboutImg5').attr('src', 'img/about/' + ((currentImageSet * 6) - 1).toString() + '.jpg');
     $('#aboutImg6').attr('src', 'img/about/' + ((currentImageSet * 6) - 0).toString() + '.jpg');
-
     setTimeout(rotateImages, 3000);
 }
 
@@ -295,21 +142,19 @@ function nextDay(day, hr, min, sec) {
     return now;
 }
 
-// Find all YouTube videos
+
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
     // The element that is fluid width
     $fluidEl = $("body");
 
-// Figure out and save aspect ratio for each video
+
 $allVideos.each(function () {
     $(this)
         .data('aspectRatio', this.height / this.width)
-        // and remove the hard coded width/height
         .removeAttr('height')
         .removeAttr('width');
 });
 
-// When the window is resized
 $(window).resize(function () {
     var newWidth = $fluidEl.width();
     // Resize all videos according to their own aspect ratio
@@ -327,6 +172,6 @@ function playVideo() {
     document.getElementById('videoOne').play();
 }
 
-function bringBackPlayButton(){
-        $('.playoverlay').css("display", 'block');
+function bringBackPlayButton() {
+    $('.playoverlay').css("display", 'block');
 }
