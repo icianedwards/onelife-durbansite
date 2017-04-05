@@ -177,10 +177,14 @@ function bringBackPlayButton() {
 }
 
 
-function reverseColor(){
-    $(".logo-instagram").css("background","#FFF").css("color","transparent").css("-webkit-background-clip","text").css("-webkit-text-fill-color","transparent");
+function reverseColor() {
+    $(".logo-instagram").css("background", "#FFF").css("color", "transparent").css("-webkit-background-clip", "text").css("-webkit-text-fill-color", "transparent");
 }
 
-function revertColor(){
-       $(".logo-instagram").css("background","-moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("background","-webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("background","linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("color","transparent").css("-webkit-background-clip","text").css("-webkit-text-fill-color","transparent");
+function revertColor() {
+    $(".logo-instagram").css("background", "-moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("background", "-webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("background", "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)").css("color", "transparent").css("-webkit-background-clip", "text").css("-webkit-text-fill-color", "transparent");
 }
+
+$('#about').click(function(){
+alert('asd');
+});
