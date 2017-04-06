@@ -1,11 +1,30 @@
 $(document).ready(function () {
+enquire.register("(max-width: 320px)", {
+    match : function() {
+     isAutoScrolling = false;
+    },
+    unmatch : function() {
+      isAutoScrolling = true
+    }
+
+});
+enquire.register("(min-width: 320px)", {
+    match : function() {
+     isAutoScrolling = true;
+    },
+    unmatch : function() {
+      isAutoScrolling = false
+    }
+
+});
+
     //[FULLPAGE]
     $('#fullpage').fullpage({
         menu: '#menu',
         navigation: false,
         css3: true,
         scrollingSpeed: 700,
-        autoScrolling: true,
+        autoScrolling: isAutoScrolling,
         fitToSection: true,
         fitToSectionDelay: 0,
         scrollBar: false,
@@ -66,13 +85,21 @@ $('.main-section-slider').slick({
 
 $('.events-section-slider').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 500,
+    fade: true,
     cssEase: 'linear', autoplay: true,
     autoplaySpeed: 5000,
-    prevArrow: ".tool-previous",
-    nextArrow: ".tool-nextous",
+        responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                infinite: true,
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 

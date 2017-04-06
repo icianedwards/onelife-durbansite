@@ -15,137 +15,95 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <!-- [Bootstrap Core CSS] -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- [Custom Fonts] -->
+    <!-- [Library CSS] -->
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="libs/jQuery-fullpage/jquery.fullPage.css" rel="stylesheet" />
     <link href="libs/slickSlider/slick/slick.css" rel="stylesheet" />
     <link href="libs/slickSlider/slick/slick-theme.css" rel="stylesheet" />
     <!-- [Theme CSS] -->
     <link href="css/onelife.css" rel="stylesheet">
-    <!-- [HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries]-->
-    <!-- [WARNING: Respond.js doesn't work if you view the page via file:// ] -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
 </head>
 
 <body>
-    <!-- [NAVIGATION] -->
-    <nav class="navbar navbar-custom navbar-fixed-top white-bg" role="navigation" id="menu">
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-fixed-top custom-nav">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#intro">
-                    <img id="colorized-logo" src="img/onelifelogo.jpg" alt="One Life Logo" class="logoimg" /> One Life
-                    <span class="hide-if-small">Church</span>
+                    <img id="colorized-logo" src="img/onelifelogo.jpg" alt="One Life Logo" class="logoimg" /> <b>One Life</b>
+                    <span class="hidden-sm hidden-xs"><b>Church</b></span>
                     <span class="light">Durban</span>
                 </a>
             </div>
-            <div class="navbar-right navbar-main-collapse collapse ">
-                <ul class="nav navbar-nav hidden-lg hidden-md">
-                    <li data-menuanchor="meetings" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#intro">HOME</a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li data-menuanchor="intro"><a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="#intro">Home</a>
                     </li>
-                    <li data-menuanchor="aboutUs" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#about">ABOUT US</a>
+                    <li data-menuanchor="aboutUs"><a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="#about">About Us</a>
                     </li>
-                    <li data-menuanchor="meetings" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#meetings">LOCATION</a>
+                    <li><a href="#location" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Location</a>
                     </li>
-                    <li data-menuanchor="time" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#time">CONTACT US</a>
+                    <li><a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact Us</a>
                     </li>
-                    <li data-menuanchor="socialize" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#socialize">SOCIAL</a>
+                    <li><a href="#app" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Messages</a>
                     </li>
-                    <li data-menuanchor="app" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#app">MESSAGES</a>
+                    <li><a href="#events" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Events</a>
                     </li>
-                    <li data-menuanchor="events" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#events">EVENTS</a>
-                    </li>
-                    <li data-menuanchor="giving" class="active" data-toggle="collapse" data-target=".navbar-main-collapse"><a href="#giving">GIVING</a>
+                    <li><a href="#giving" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Giving</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GET INVOLVED <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Involved <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#connect" data-toggle="collapse" data-target=".navbar-main-collapse">CONNECT GROUPS</a>
+                            <li><a href="#connect" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Connect Groups</a>
                             </li>
-                            <li><a href="#fusion" data-toggle="collapse" data-target=".navbar-main-collapse">FUSION</a>
+                            <li><a href="#fusion" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Fusion</a>
                             </li>
-                            <li><a href="#olkids" data-toggle="collapse" data-target=".navbar-main-collapse">ONE LIFE KIDS</a>
+                            <li><a href="#olkids" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">One Life Kids</a>
                             </li>
-                            <li><a href="#olteams" data-toggle="collapse" data-target=".navbar-main-collapse">ONE LIFE TEAMS</a>
+                            <li><a href="#olteams" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">One Life Teams</a>
                             </li>
-                            <li><a href="#powerofsixty" data-toggle="collapse" data-target=".navbar-main-collapse">POWER OF 60</a>
+                            <li><a href="#powerofsixty" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Power of 60</a>
                             </li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav hidden-sm hidden-xs visible-lg visible-md">
-                    <li data-menuanchor="meetings" class="active" <a href="#intro">HOME</a>
+                    <li><a href="#" class="social-link facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     </li>
-                    <li data-menuanchor="aboutUs" class="active"><a href="#about">ABOUT US</a>
-                    </li>
-                    <li data-menuanchor="meetings" class="active"><a href="#meetings">LOCATION</a>
-                    </li>
-                    <li data-menuanchor="time" class="active"><a href="#time">CONTACT US</a>
-                    </li>
-                    <li data-menuanchor="socialize" class="active"><a href="#socialize">SOCIAL</a>
-                    </li>
-                    <li data-menuanchor="app" class="active"><a href="#app">MESSAGES</a>
-                    </li>
-                    <li data-menuanchor="events" class="active"><a href="#events">EVENTS</a>
-                    </li>
-                    <li data-menuanchor="giving" class="active"><a href="#giving">GIVING</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GET INVOLVED <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#connect">CONNECT GROUPS</a>
-                            </li>
-                            <li><a href="#fusion">FUSION</a>
-                            </li>
-                            <li><a href="#olkids">ONE LIFE KIDS</a>
-                            </li>
-                            <li><a href="#olteams">ONE LIFE TEAMS</a>
-                            </li>
-                            <li><a href="#powerofsixty">POWER OF 60</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="#" class="social-link instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- [FULLPAGE] -->
+
     <div id="fullpage">
         <!--[SECTION 1]-->
-        <div class="section hidden-xs" data-anchor="intro" id="mainSection">
-            <div class="container-fluid main-slider-container">
-                <div class="row">
-                    <div class="main-section-slider">
-                        <div class="slider-image-two"></div>
-                        <div class="slider-image-three"></div>
-                        <div class="slider-image-one"></div>
+        <div class="section" data-anchor="intro" id="intro">
+            <div class="container-fluid container-fluid-no-padding">
+                <div class="main-section-slider">
+                    <div class="slider-image bg-cover pos-bg">
+                    </div>
+                    <div class="slider-image bg-cover pos-bg">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section neo-sunset hidden-md hidden-lg" data-anchor="intro" id="mainSection">
-            <img class="centered-block img-responsive mobile-brand" src="img/onelifewhite.png" alt="" />
-            <br/>
-            <h1 class="text-center">One Life Durban</h1>
-        </div>
         <!--[SECTION 2]-->
         <div class="section" data-anchor="about" id="aboutSection">
-            <div class="container-fluid  responsive-padding-100">
-                <div class="section-slider">
-                    <div>
-                        <div class="container-fluid">
-                            <div class="row margin-25-bottom">
-                                <div class="siteinfo margin-10-all">
-                                    <h1 id="#aboutHeader" class="text-center open-sans-regular text-red">About Us</h1>
-                                </div>
+            <div class="container-fluid">
+                <div>
+                    <div class="section-slider">
+                        <div>
+                            <div>
+                                <h1 class="text-center">About Us</h1>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-12  responsive-padding">
                                     <p class="open-sans-regular text-center">
                                         One Life Church meets in a number of sites all around KZN. The church has been going since 1974 and has been in Durban since
                                         2015.
@@ -156,6 +114,12 @@
                             </div>
                             <div class="row">
                                 <div class="pic-slider">
+                                    <div><img src="img/Pic5.jpg" class="img-responsive center-block image-max-height-fix" alt=""
+                                        />
+                                    </div>
+                                    <div><img src="img/Pic6.jpg" class="img-responsive center-block image-max-height-fix" alt=""
+                                        />
+                                    </div>
                                     <div><img src="img/Pic7.jpg" class="img-responsive center-block image-max-height-fix" alt=""
                                         />
                                     </div>
@@ -171,21 +135,15 @@
                                     <div><img src="img/Pic11.jpg" class="img-responsive center-block image-max-height-fix" alt=""
                                         />
                                     </div>
-                                    <div><img src="img/Pic12.jpg" class="img-responsive center-block image-max-height-fix" alt=""
+                                    <div><img src="img/Pic12.jpeg" class="img-responsive center-block image-max-height-fix" alt=""
                                         />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="container-fluid">
-                            <div class="row margin-25-bottom">
-                                <div class="siteinfo">
-                                    <h1 class="text-center open-sans-regular">One Life Music</h1>
-                                    <h3 class="text-center open-sans-regular h3mobileFix">Download Music for Free</h3>
-                                </div>
-                            </div>
+                        <div>
+                            <h1 class="text-center open-sans-regular">One Life Music</h1>
+                            <h3 class="text-center open-sans-regular">Download Music for Free</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <a href="http://onelifechurch.org.za/one-life-music/" target="_blank">
@@ -200,15 +158,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="container-fluid">
-                            <div class="row margin-25-bottom">
-                                <div class="siteinfo">
-                                    <h1 class="text-center open-sans-regular h1mobileFix">Destiny Leadership Academy</h1>
-                                    <h3 class="text-center open-sans-regular h3mobileFix"> Adventure | Fun | Travel</h3>
-                                </div>
-                            </div>
+                        <div>
+                            <h1 class="text-center open-sans-regular h1mobileFix">Destiny Leadership Academy</h1>
+                            <h3 class="text-center open-sans-regular h3mobileFix"> Adventure | Fun | Travel</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <a href="http://destiny.onelifechurch.org.za/" target="_blank">
@@ -226,45 +178,37 @@
                         </div>
                     </div>
                 </div>
-                <a class="tool-prev animated"><i class="fa fa-caret-left fa-6"></i></a>
-                <a class="tool-next"><i class="fa fa-caret-right fa-6"></i></a>
             </div>
         </div>
         <!--[SECTION 3]-->
-        <div class="section" data-anchor="meetings" id="meetingsSection">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 siteinfo red-bg box">
+        <div class="section sand-bg" data-anchor="location" id="locationSection">
+            <div class="container-fluid container-fluid-no-padding">
+                <div class="box">
+                    <div class="left red-bg">
                         <h1 class="text-center open-sans-regular">WHERE WE MEET</h1>
                         <p class="sitedetail open-sans-regular text-center text-size-18">
                             We meet every <b>Sunday</b> morning at <b>9am</b> at THE WAVEHOUSE, Gateway Theatre of Shopping.
                             Parkade A, Entrance 8
                         </p>
+                        <br/>
+                        <div class="centered-block hidden-lg hidden-md visible-sm visible-xs">
+                            <a href="geo:0,0?q=17+Ennisdale+Dr,+Durban+North,+4051" class="btn btn-transparent">GET DIRECTIONS</a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 box-map">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div id="mapDurban" class="hidden-xs">
-                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqJP-1riXglo_VecsIY33LRP4n0Y6Iik&q=Gateway+Theatre+of+Shopping"
-                                        width="600" height="450" frameborder="0" style="border: 0"></iframe>
-                                </div>
-                                <div class="hidden-lg hidden-md hidden-sm visible-xs">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqJP-1riXglo_VecsIY33LRP4n0Y6Iik&q=Gateway+Theatre+of+Shopping"></iframe>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-md-6 col-md-offset-6 container-fluid-no-padding hidden-sm hidden-xs visible-lg visible-md">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqJP-1riXglo_VecsIY33LRP4n0Y6Iik&q=Gateway+Theatre+of+Shopping"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--[SECTION 4]-->
-        <div class="section neo-sunset" data-anchor="time" id="days-to-meetingSection">
+        <div class="section orange-bg" data-anchor="contact" id="contactSection">
             <div class="container-fluid">
                 <div class="row">
                     <div>
-                        <h1 class="text-center open-sans-regular">Contact One Life Durban</h2>
+                        <h1 class="text-center open-sans-regular">Contact One Life Durban</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -272,19 +216,13 @@
                         <p id="contactInfo" class="text-center open-sans-regular text-size-18">
                             Feel free to get in touch for any information you need.
                             <br />
-                            <a href="mailto:info@onelifedurban.co.za">info@onelifedurban.co.za</a>
+                            <a class="text-white" href="mailto:info@onelifedurban.co.za">info@onelifedurban.co.za</a>
                             <br />
-                            <a href="tel:0723729120">072 372 9120</a>
+                            <a class="text-white" href="tel:0723729120">072 372 9120</a>
                         </p>
                     </div>
                 </div>
                 <ul class="list-inline banner-social-buttons text-center">
-                    <li style="display: none">
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-transparent btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li style="display: none">
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
                     <li>
                         <a href="mailto:info@onelifedurban.co.za" class="btn btn-transparent btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
                     </li>
@@ -295,86 +233,48 @@
             </div>
         </div>
         <!--[SECTION 5]-->
-        <div class="section" data-anchor="socialize" id="socializeSection">
+        <div class="section" data-anchor="app" id="appSection">
             <div class="container-fluid">
-                <div class="row">
-                    <h1 class="text-center visible-xs">Socialize With Us</h1>
-                    <div class="col-md-6 facebook-bg box-social">
-                        <div class="centered-block">
-                            <a style="color: inherit" href="https://www.facebook.com/onelifedurban/" target="_blank"><i class="fa fa-facebook-official social-button"></i></a>
-                            <h1 class="text-center hidden-sm hidden-xs visible-md visible-lg">Like Us On Facebook</h1>
-                            <h3 class="text-center visible-sm visible-xs hidden-md hidden-lg">Like Us On Facebook</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 instagram-bg box-social" onmouseover="reverseColor()" onmouseout="revertColor()">
-                        <div class="centered-block">
-                            <a href="https://www.instagram.com/1life_church/" style="color: inherit" target="_blank"> <i id="instagramLogo" class="fa fa-instagram logo-instagram social-button"></i></a>
-                            <h1 id="instagramHeading" class="text-center hidden-sm hidden-xs visible-md visible-lg">Follow Us On Instagram</h1>
-                                           <h3 class="text-center visible-sm visible-xs hidden-md hidden-lg">Follow Us On Instagram</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--[SECTION 5]-->
-        <div class="section black-bg" data-anchor="app" id="appSection">
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="open-sans-regular text-center hidden-sm hidden-xs">Download our One Life app and listen to additional messages</h1>
-                    <h1 style="padding: 5px" class="open-sans-regular text-center visible-sm visible-xs">Download our One Life app</h1>
-                    <h3 style="padding: 5px" class="open-sans-regular text-center visible-sm visible-xs">and listen to additional messages</h3>
-                    <br/>
-                    <div class="center-block text-center">
-                        <a href="http://subsplash.com/1lifechurch/app" target="_blank" class="open-sans-regular btn btn-default red-bg">Download The App Here</a>
-                    </div>
-                </div>
+                <img class="img-responsive centered-block download-image" src="/img/Pic38.jpg" alt="" />
+
             </div>
         </div>
         <!--[SECTION 6]-->
         <div class="section" data-anchor="events" id="eventsSection">
-            <div class="container">
-                <div class="row">
-                 <h1 class="text-center visible-xs" style="margin-top: 25vh;">Upcoming Events</h1>
-                    <div class="events-section-slider">
-                        <div>
-                            <div class="col-md-12 slider-image-four">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-12 slider-image-five"></div>
-                        </div>
+            <div class="container-fluid container-fluid-no-padding">
+                <h1 class="text-center hidden-lg hidden-md">Upcoming Events</h1>
+                <div class="events-section-slider">
+                    <div>
+                        <img class="img-responsive centered-block event-image" src="/img/Pic17.png" />
+                    </div>
+                    <div>
+                        <img class="img-responsive centered-block event-image" src="/img/Pic16.jpg" />
                     </div>
                 </div>
-            </div>
-            <div class="slider-nav">
-                <a class="tool-previous"><i class="fa fa-caret-left fa-6"></i></a>
-            <a class="tool-nextous"><i class="fa fa-caret-right fa-6"></i></a>
             </div>
         </div>
         <!--[SECTION 7]-->
         <div class="section" data-anchor="giving" id="givingSection">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 giving-bg">
-                        <h1 class="text-center text-white mobile-bg-text hidden-lg hidden-md">GIVING</h1>
+                <div class="box">
+                    <div class="top bg-cover giving-bg giving-fix">
                     </div>
-                    <div class="col-md-12 box-4">
-                        <h1 class="open-sans-regular text-center hidden-xs hidden-sm">GIVING</h1>
-                        <h4 class="open-sans-regular text-center"> If you would like to give financially, here are our banking details</h4>
+                    <div class="bottom giving-fix">
+                        <h1 class="text-center">GIVING</h1>
+                        <h4 class="text-center"> If you would like to give financially, here are our banking details</h4>
                         <br>
-                        <div class="col-md-3 col-md-offset-2 text-center" style="font-size: 16px;line-height: 1.5">
-                            <b>Durban Tithe Account</b>
-                            <br/> First National Bank
-                            <br/> Branch Code: 250655
-                            <br/> Account Number: 62447996846
+                        <div class="col-md-3 col-md-offset-2 text-center line-height-point-five-responsive">
+                            <p><b>Durban Tithe Account</b> </p>
+                            <p> First National Bank </p>
+                            <p> Branch Code: 250655 </p>
+                            <p> Account Number: 62447996846 </p>
                             <br/>
                         </div>
-                        <br class="visible-xs" />
-                        <div class="col-md-3 col-md-offset-2  text-center" style="font-size: 16px;line-height: 1.5">
-                            <b>Durban Building Fund Account</b>
-                            <br/> First National Bank
-                            <br/> Branch Code: 250655
-                            <br/> Account Number: 62555543521
+                        <div class="col-md-3 col-md-offset-2 text-center line-height-point-five-responsive">
+                            <p><b>Durban Building Fund Account</b> </p>
+                            <p> First National Bank </p>
+                            <p> Branch Code: 250655 </p>
+                            <p> Account Number: 62555543521 </p>
                             <br/>
                         </div>
                     </div>
@@ -384,13 +284,11 @@
         <!--[SECTION 8]-->
         <div class="section" data-anchor="connect" id="connectSection">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 connect-bg">
-                        <h1 class="text-center text-white mobile-bg-text hidden-lg hidden-md">CONNECT</h1>
+                <div class="box">
+                    <div class="top bg-cover connect-bg ">
                     </div>
-                    <div class="col-md-12 box-3">
-                        <h1 class="open-sans-regular text-center hidden-xs hidden-sm">CONNECT</h1>
-                        <br>
+                    <div class="bottom">
+                        <h1 class="text-center">CONNECT</h1>
                         <p class="text-center">We meet in small groups in various homes around the city to build friendships and grow in our faith.</p>
                         <p class="text-center">Contact <b>Ruth</b> on <b>072 372 9120</b> to find one that meets in your area.</p>
                     </div>
@@ -398,62 +296,60 @@
             </div>
         </div>
         <!--[SECTION 9]-->
-        <div class="section fusion-bg" data-anchor="fusion" id="fusionSection">
+        <div class="section bg-cover fusion-bg" data-anchor="fusion" id="fusionSection">
             <div class="container-fluid" style="margin-top:50px">
                 <div class="row">
                     <h3 class="text-center">THE</h3>
                 </div>
-
-                <div class="row">
+                <div class="row row-fix">
                     <div class="fusion-header-container col-md-4 col-md-offset-4">
-                        <h1 class="text-center fusion-header-h1">FUSION</h1>
+                        <h1 class="text-center fusion-header">FUSION</h1>
                     </div>
                 </div>
-
                 <div class="row">
                     <h3 class="text-center">YOUTH MOVEMENT</h3>
                 </div>
-
                 <div class="row">
                     <h3 class="text-center">EVERY FRIDAY @ <br class="visible-xs" /> 6:30PM - 8:30PM </h3>
                 </div>
-
                 <div class="row">
                     <h3 class="text-center">66 MARGARET</h3>
                     <h3 class="text-center">MAYTOM AVENUE</h3>
-                    <h3 class="text-center">DURBAN NORTH</h3h4>
+                    <h3 class="text-center">DURBAN NORTH</h3>
                 </div>
-
                 <div class="row">
                     <h3 class="text-center">12 - 18 YEARS OLD</h3>
                 </div>
             </div>
         </div>
-
         <!--[SECTION 10]-->
-        <div class="section olkids-bg" data-anchor="olkids" id="olkidsSection">
+        <div class="section" data-anchor="olkids" id="olkidsSection">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="centered-block"><img id="olkImage" class="img-responsive center-block" src="/img/Pic30.png" />
+                <div class="box">
+                    <div class="top bg-cover olkids-bg kids-fix">
+                        <div class="slider-image-content">
+                            <img class="img-responsive centered-block fix-size-img-500" src="/img/Pic30_inverted.png" /></div>
                     </div>
-                    <br/>
-                    <div class="col-md-6 col-md-offset-3">
+                    <div class="bottom kids-fix">
+                        <h1 class="text-center">ONE LIFE KIDS</h1>
                         <p class="text-center">We are super passionate about all of our kids and believe that helping them discover who Jesus is,
                             it's absolutely central to them walking out a passionate life with Him no matter what their age
                             is. Games, worship, friends and a fun, new lessons every week. Your kids can be a part of one
                             of our two groups.
                         </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h3 class="text-center">AGES 1-4</h3>
-                        <div class="centered-block"><img class="img-responsive centered-block" src="/img/Pic26.JPG" />
-                        </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <h3 class="text-center">AGES 5-12</h3>
-                        <div class="centered-block"><img class="img-responsive centered-block" src="/img/Pic26.JPG" />
+                        <div class="row row-fix">
+                            <div class="col-xs-6">
+                                <h4 class="text-center">AGES 1-4</h4>
+                                <div class="centered-block">
+                                    <a href="#"><img class="img-responsive centered-block" src="/img/Pic26.JPG" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <h4 class="text-center">AGES 5-12</h4>
+                                <div class="centered-block">
+                                    <a href="#"><img class="img-responsive centered-block" src="/img/Pic26.JPG" /></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -462,13 +358,11 @@
         <!--[SECTION 11]-->
         <div class="section" data-anchor="olteams" id="olteamsSection">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 teams-bg">
-                        <h1 class="text-center text-white mobile-bg-text hidden-lg hidden-md">ONE LIFE TEAMS</h1>
+                <div class="box">
+                    <div class="top bg-cover our-teams">
                     </div>
-                    <div class="col-md-12 box-5">
-                        <h1 class="open-sans-regular text-center hidden-xs hidden-sm">ONE LIFE TEAMS</h1>
-                        <br>
+                    <div class="bottom">
+                        <h1 class="text-center">ONE LIFE TEAMS</h1>
                         <p class="text-center">
                             Give us a call and we’ll tell you how you can be involved in one of our teams.
                         </p>
@@ -478,28 +372,25 @@
         </div>
         <!--[SECTION 12]-->
         <div class="section" data-anchor="powerofsixty" id="powerofsixtySection">
-            <div class="container-fluid" style="margin-bottom: 50px;">
-
-                <div class="row">
-                    <div class="col-md-12 powerofsixty-bg">
-                        <h1 class="text-center text-white mobile-bg-text hidden-lg hidden-md">POWER OF 60</h1>
+            <div class="container-fluid">
+                <div class="box">
+                    <div class="top bg-cover power-of-sixty">
                     </div>
-                    <div class="col-md-12 box-pow">
-                        <h1 class="open-sans-regular text-center hidden-xs hidden-sm">POWER OF 60</h1>
-                        <br>
+                    <div class="bottom">
+                        <h1 class="text-center">POWER OF 60</h1>
                         <p class="text-center"> We are encouraging every person to commit 60 minutes of their time into one of our 3 community projects.
                             <br/> Sizokhula: Children’s Aftercare and Feeding Scheme, Thembela Old Age Home and Golden Hours
                             School for children with special needs.
                             <br/> Contact <b>Veronica Webb</b> on <b>082 060 2450</b> to find out how you can be involved
                             in changing someone’s life.</p>
+                        <footer class="black-bg">
+                            <div class="container-fluid open-sans-regular">
+                                © 2017 One Life Church.
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </div>
-            <footer class="black-bg">
-                <div class="container-fluid open-sans-regular">
-                    © 2017 One Life Church.
-                </div>
-            </footer>
         </div>
     </div>
     <!-- jQuery -->
@@ -508,6 +399,8 @@
     <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--Enquire JS-->
+    <script type="text/javascript" src="libs/enquire-js/enquire.min.js"></script>
     <!-- Fullpage JS -->
     <script type="text/javascript" src="libs/jQuery-fullpage/jquery.fullPage.min.js"></script>
     <!-- Fullpage JS -->
@@ -515,23 +408,9 @@
     <!-- Slick Slider -->
     <script type="text/javascript" src="libs/slickSlider/slick/slick.min.js"></script>
     <!-- Custom Script -->
-    <script type="text/javascript" src="js/onelife.js"></script>
+    <script type="text/javascript" src="js/onelife.min.js"></script>
     <!-- Google Analytics -->
-    <script type="text/javascript">
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-89966704-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <script type="text/javascript" src="js/analytics.js"></script>
 </body>
 
 </html>
