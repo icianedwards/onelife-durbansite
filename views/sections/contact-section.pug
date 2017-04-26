@@ -1,0 +1,27 @@
+#contactSection.section.orange-bg(data-anchor='contact')
+  .container-fluid
+    .row
+      div
+        h1.text-center.open-sans-regular Contact One Life Durban
+    .row
+      .margin-10-all
+        p#contactInfo.text-center.open-sans-regular.text-size-18
+          | Feel free to get in touch for any information you need.
+          br
+          |  
+          a.text-white(href='mailto:durban@onelifechurch.org.za') durban@onelifechurch.org.za
+          br
+          |  
+          a.text-white(href='tel:0647346290 ') 064 734 6290 
+    ul.list-inline.banner-social-buttons.text-center
+      li
+        a.btn.btn-transparent.btn-lg(href='mailto:durban@onelifechurch.org.za')
+          i.fa.fa-envelope.fa-fw
+          |  
+          span.network-name Email
+      li
+        a.btn.btn-transparent.btn-lg(href='tel:0647346290')
+          i.fa.fa-phone.fa-fw
+          |  
+          span.network-name Phone
+    include ../common/footer.pug
