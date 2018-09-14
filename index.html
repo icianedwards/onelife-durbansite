@@ -1,331 +1,270 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="One Life Church is a vibrant church that meets in Durban at The Wavehouse in Gateway Shopping Centre">
-    <meta name="author" content="">
-    <meta name="keywords" content="Durban, Umhlanga, Church, Wavehouse, Gateway" />
+<!DOCTYPE html>
+<html ng-app="softApp">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>ONE LIFE CHURCH - DURBAN</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="css/jquery.fullPage.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="img/Favicon.png" />
-
-
-    <!-- Theme CSS -->
-    <link href="css/onelife.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-89966704-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="menu">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#intro">
-                    <img src="img/onelifelogo.jpg" alt="One Life Logo" class="logoimg" /> One Life <span class="hide-if-small">Church </span><span class="light">Durban</span>
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li data-menuanchor="meetings" class="active"><a href="#meetings">Where we meet</a></li>
-                    <li data-menuanchor="about"><a href="#about">About us</a></li>
-                    <li data-menuanchor="contact"><a href="#contact">Get in Touch</a></li>
-                    <li><a href="https://www.facebook.com/onelifedurban/" target="_blank"><img src="img/facebook.png" alt="Facebook" class="menu-icon" /></a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/css/lib.css" rel="stylesheet">
+    <link href="assets/styles/css/one-life.css" rel="stylesheet">
+    <link href="assets/styles/css/style.css" rel="stylesheet">
+    <nav class="navbar navbar-fixed-top custom-nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand page-scroll" href="#intro"><img class="logoimg" id="colorized-logo" src="/assets/media/img/onelifelogo.jpg" alt="One Life Logo"> <b>One Life</b> <span class="hidden-sm hidden-xs"><b>Church</b></span> <span class="light">Durban</span></a>
         </div>
-        <!-- /.container -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li data-menuanchor="intro"><a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="#intro">Home</a></li>
+            <li data-menuanchor="aboutUs"><a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="#about">About Us</a></li>
+            <li><a href="#location" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Location</a></li>
+            <li><a href="#app" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Messages</a></li>
+            <li><a href="#events" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Events</a></li>
+            <li><a href="#giving" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Giving</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Involved<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#connect" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Connect Groups</a></li>
+                <li><a href="#fusion" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Fusion</a></li>
+                <li><a href="#olkids" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">One Life Kids</a></li>
+                <li><a href="#olteams" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">One Life Teams</a></li>
+                <li><a href="#powerofsixty" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Power of 60</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Contact Us</a></li>
+            <li><a class="social-link facebook" href="https://www.facebook.com/onelifedurban"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a class="social-link instagram" href="https://www.instagram.com/onelifedurban/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <!-- Intro Header -->
     <div id="fullpage">
-        <div class="section" data-anchor="intro" id="intro-section">
-            <div class="container">
-                <div class="row">
-                    <img src="img/onthemove.jpg" alt="On the Move" class="landingpageImage img-responsive" />
+      <div class="section" id="intro" data-anchor="intro">
+        <div class="container-fluid container-fluid-no-padding">
+          <div class="main-section-slider">
+            <div class="slider-image bg-cover trees-bg">
+              <div class="slider-image-content full-width full-height center">
+                <div class="container">
+                  <h1 class="nimbus-roman text-white text-center">KNOWING GOD</h1>
+                  <h3 class="nimbus-roman text-white text-center"><i>a series on the attributes of God</i></h3>
                 </div>
+              </div>
             </div>
+            <div class="slider-image bg-cover pos-bg"></div>
+          </div>
         </div>
-        <div class="section" data-anchor="meetings" id="meetings-section">
-            <!-- layout for bigger screens -->
-            <div class="container hide-if-small">
-                <div class="row meetings-header">
-                    <div class="col-md-6 siteinfo">
-                        <h1 class="pageheader">THE WAVEHOUSE<br />GATEWAY</h1>
-                    </div>
-                    <div class="col-md-6 siteinfo text-right">
-                        <h1 class="pageheader">Sundays<br />9AM</h1>
-                    </div>
+      </div>
+      <div class="section" id="aboutSection" data-anchor="about">
+        <div class="container-fluid">
+          <div>
+            <div class="section-slider">
+              <div>
+                <div>
+                  <h1 class="text-center">About Us</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 siteinfo">
-                        <h1>WE'RE ON THE MOVE</h1>
-                        <p class="sitedetail">
-                            Starting on 8 January 2017, we are meeting in a temporary facility at <b>THE WAVEHOUSE</b> while our
-                            long term venue is being prepared.<br />From the beginning of March 2017, we move into the
-                            <b>NEW</b> venue which will be kitted out with the sound & lighting rig which we've
-                            acquired from The Barnyard.
-                        </p>
-                    </div>
-                    <div class="col-sm-6 siteinfo">
-                        <div class="countdown countdown-horizontal">
-                            <div class="row text-center meetingComingUp">
-                                <div class="col-xs-3"><h3>Days</h3></div>
-                                <div class="col-xs-3"><h3>Hrs</h3></div>
-                                <div class="col-xs-3"><h3>Mins</h3></div>
-                                <div class="col-xs-3"><h3>Secs</h3></div>
-                            </div>
-                            <div class="row text-center meetingComingUp">
-                                <div class="col-xs-3"><h3><span class="spNextMeetingDays"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingHrs"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingMins"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingSecs"></span></h3></div>
-                            </div>
-                            <div class="row text-right meetingNow">
-                                <div class="col-xs-12"><span><h3>Meeting NOW ON!</h3></span></div>
-                            </div>
-                        </div>
-                        <div class="videoAnnouncement">
-                            <div class="videoWrapper">
-                                <video controls>
-                                    <source src="video/benjiWavehouseWelcome.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="col-sm-12 responsive-padding">
+                    <p class="open-sans-regular text-center">One Life Church meets in a number of sites all around KZN. The church has been going since 1974 and has been in Durban since 2015.<br> The pictures will give you a bit of an introduction to who we are and what we are passionate about. Slide across to find out more about us.</p>
+                  </div>
                 </div>
+                <div class="row">
+                  <div class="pic-slider">
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic5.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic6.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic7.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic8.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic9.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic10.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic11.jpg" alt=""></div>
+                    <div><img class="img-responsive center-block image-max-height-fix" src="/assets/media/img/Pic12.jpeg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-center open-sans-regular">One Life Music</h1>
+                <h3 class="text-center open-sans-regular">Download Music for Free</h3>
+                <div class="row">
+                  <div class="col-md-6"><a href="http://onelifechurch.org.za/one-life-music/" target="_blank"><img class="img-responsive responsive-image-fix" src="/assets/media/img/downloadWorshipMusic.jpg" alt="Download Worship Music"></a></div>
+                  <div class="col-md-6"><br class="visible-sm visible-xs">
+                    <p class="open-sans-regular centered-text-on-small"> Get access to great resources for your church and your worship team.</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-center open-sans-regular h1mobileFix">Destiny Leadership Academy</h1>
+                <h3 class="text-center open-sans-regular h3mobileFix"> Adventure | Fun | Travel</h3>
+                <div class="row">
+                  <div class="col-md-6"><a href="http://destiny.onelifechurch.org.za/" target="_blank"><img class="img-responsive responsive-image-fix" src="/assets/media/img/dlaSlider.jpg" alt="Destiny Leadership Academy"></a></div>
+                  <div class="col-md-6"><br class="visible-xs">
+                    <p class="open-sans-regular centered-text-on-small">Destiny Leadership Academy provides young people with a focused opportunity to develop within the heart of a vibrant, Gospel-centered, mission oriented local church community.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- layout for smaller width screens-->
-            <div class="container show-if-small-div">
-                <div class="row meetings-header">
-                    <div class="col-sm-8 siteinfo">
-                        <h1 class="pageheader">
-                            THE WAVEHOUSE, GATEWAY<br />
-                            Sundays, 9AM
-                        </h1>
-                    </div>
-                    <div class="col-sm-4 siteinfo">
-                        <div class="countdown countdown-vertical">
-                            <div class="row text-right meetingComingUp">
-                                <h3>Days: <span class="spNextMeetingDays"></span></h3>
-                                <h3>Hrs: <span class="spNextMeetingHrs"></span></h3>
-                                <h3>Mins: <span class="spNextMeetingMins"></span></h3>
-                                <h3>Secs: <span class="spNextMeetingSecs"></span></h3>
-                            </div>
-                            <div class="row text-right meetingNow">
-                                <span class="tworows"><h3>Meeting<br /> NOW ON!</h3></span>
-                                <span class="onerow"><h3>Meeting NOW ON!</h3></span>
-                            </div>
-                        </div>
-                        <div class="countdown countdown-horizontal">
-                            <div class="row text-center meetingComingUp">
-                                <div class="col-xs-3"><h3>Days</h3></div>
-                                <div class="col-xs-3"><h3>Hrs</h3></div>
-                                <div class="col-xs-3"><h3>Mins</h3></div>
-                                <div class="col-xs-3"><h3>Secs</h3></div>
-                            </div>
-                            <div class="row text-center meetingComingUp">
-                                <div class="col-xs-3"><h3><span class="spNextMeetingDays"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingHrs"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingMins"></span></h3></div>
-                                <div class="col-xs-3"><h3><span class="spNextMeetingSecs"></span></h3></div>
-                            </div>
-                            <div class="row text-right meetingNow">
-                                <div class="col-xs-12"><span><h3>Meeting NOW ON!</h3></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 siteinfo">
-                        <h1>WE'RE ON THE MOVE</h1>
-                        <p class="sitedetail">
-                            Starting on 8 January 2017, we are meeting in a temporary facility at <b>THE WAVEHOUSE</b> while our
-                            long term venue is being prepared.<br />From the beginning of March 2017, we move into the
-                            <b>NEW</b> venue which will be kitted out with the sound & lighting rig which we've
-                            acquired from The Barnyard.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 siteinfo">
-                        <div class="videoAnnouncement">
-                            <div class="videoWrapper">
-                                <video width="320" height="240">
-                                    <source src="video/videoTest.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="section" data-anchor="about" id="about-section">
-            <div class="container">
-                <div class="slide">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>About One Life Church</h2>
-                            <p>
-                                One Life Church meets in a number of sites all around KZN. The church has been going since 1974 and has been in Durban since 2015.<br />
-                                The pictures will give you a bit of an introduction to who we are and what we are passionate about. Slide across to find out more about
-                                us.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="img/about/1.jpg" id="aboutImg1" class="img-responsive gallery-img" alt="" />
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/about/2.jpg" id="aboutImg2" class="img-responsive gallery-img" alt="" />
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/about/3.jpg" id="aboutImg3" class="img-responsive gallery-img" alt="" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <img src="img/about/4.jpg" id="aboutImg4" class="img-responsive gallery-img" alt="" />
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/about/5.jpg" id="aboutImg5" class="img-responsive gallery-img" alt="" />
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="img/about/6.jpg" id="aboutImg6" class="img-responsive gallery-img" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>One Life Church : Leaders Summit</h2>
-                            <p>
-                                Leaders Summit is happening in Pietermaritzburg on 20 / 21 January. Click on the picture below or Contact us to get more information
-                                and to register.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <a href="http://onelifechurch.org.za/leadership-summit-17/" target="_blank">
-                                <img src="img/leadersSummit.jpg" class="img-responsive" alt="Leaders Summit" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>One Life Music : Download Music for Free</h2>
-                            <p>
-                                Get access to great resources for your church and your worship team. Click on the image below to access the resources.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <a href="http://onelifechurch.org.za/one-life-music/" target="_blank">
-                                <img src="img/downloadWorshipMusic.jpg" class="img-responsive" alt="Download Worship Music" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2>Destiny Leadership Academy : Adventure | Fun | Travel</h2>
-                            <p>
-                                Destiny Leadership Academy provides young people with a focused opportunity to develop within the heart of a vibrant,
-                                Gospel-centered, mission oriented local church community. Click below for more info.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <a href="http://destiny.onelifechurch.org.za/" target="_blank">
-                                <img src="img/dlaSlider.jpg" class="img-responsive" alt="Destiny Leadership Academy" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="section sand-bg" id="locationSection" data-anchor="location">
+        <div class="container-fluid container-fluid-no-padding">
+          <div class="box">
+            <div class="left red-bg">
+              <h1 class="text-center open-sans-regular">WHERE WE MEET</h1>
+              <p class="sitedetail open-sans-regular text-center responsive-padding" style="padding: 10px;">We meet every <b>Sunday</b> morning at <b>9am</b> at THE WAVEHOUSE, Gateway Theatre of Shopping. Parkade A, Entrance 8</p><br>
+              <div class="centered-block hidden-lg hidden-md visible-sm visible-xs"><a class="btn btn-transparent" href="geo:0,0?q=17+Ennisdale+Dr,+Durban+North,+4051">GET DIRECTIONS</a></div>
             </div>
-        </div>
-        <div class="section" data-anchor="contact" id="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Contact One Life Durban</h2>
-                        <p>
-                            Feel free to get in touch for any information you need.<br />
-                            <a href="mailto:info@onelifedurban.co.za">info@onelifedurban.co.za</a><br />
-                            <a href="tel:0723729120">072 372 9120</a>
-                        </p>
-                        <ul class="list-inline banner-social-buttons">
-                            <li style="display: none">
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li style="display: none">
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@onelifedurban.co.za" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                            </li>
-                            <li>
-                                <a href="tel:0723729120" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">Phone</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/onelifedurban/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2>Join us at The Wavehouse, Gateway</h2>
-                        <div id="mapDurban"></div>
-                    </div>
-                </div>
+            <div class="col-md-6 col-md-offset-6 container-fluid-no-padding hidden-sm hidden-xs visible-lg visible-md">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLqJP-1riXglo_VecsIY33LRP4n0Y6Iik&amp;q=Gateway+Theatre+of+Shopping"></iframe>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="section" id="appSection" data-anchor="app">
+        <div class="container-fluid"><img class="img-responsive centered-block download-image" src="/assets/media/img/Pic38.jpg" alt=""></div>
+      </div>
+      <div class="section" id="givingSection" data-anchor="giving">
+        <div class="container-fluid">
+          <div class="box">
+            <div class="top bg-cover giving-bg giving-fix"></div>
+            <div class="bottom giving-fix">
+              <h1 class="text-center">GIVING</h1>
+              <h4 class="text-center"> If you would like to give financially, here are our banking details</h4><br>
+              <div class="col-md-3 col-md-offset-2 text-center line-height-point-five-responsive">
+                <p><b>Durban Tithe Account</b></p>
+                <p> First National Bank</p>
+                <p> Branch Code: 250655</p>
+                <p> Account Number: 62447996846</p><br>
+              </div>
+              <div class="col-md-3 col-md-offset-2 text-center line-height-point-five-responsive">
+                <p><b>Durban Building Fund Account</b></p>
+                <p> First National Bank</p>
+                <p> Branch Code: 250655</p>
+                <p> Account Number: 62555543521</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="connectSection" data-anchor="connect">
+        <div class="container-fluid">
+          <div class="box">
+            <div class="top bg-cover connect-bg connect-fix"></div>
+            <div class="bottom connect-fix">
+              <h1 class="text-center">CONNECT</h1>
+              <p class="text-center">We meet in small groups in various homes around the city to build friendships and grow in our faith.</p>
+              <p class="text-center">Contact <b>Ruth</b> on <b>072 372 9120</b> to find one that meets in your area.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="eventsSection" data-anchor="events">
+        <div class="container-fluid container-fluid-no-padding">
+          <h1 class="text-center hidden-lg hidden-md">Upcoming Events</h1>
+          <div class="events-section-slider">
+            <div><img class="img-responsive centered-block event-image" src="/assets/media/img/Pic16.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section bg-cover fusion-bg" id="fusionSection" data-anchor="fusion">
+        <div class="container-fluid" style="margin-top:50px;">
+          <div class="row">
+            <h3 class="text-center">THE</h3>
+          </div>
+          <div class="row row-fix">
+            <div class="fusion-header-container col-md-4 col-md-offset-4">
+              <h1 class="text-center fusion-header">FUSION</h1>
+            </div>
+          </div>
+          <div class="row">
+            <h3 class="text-center">YOUTH MOVEMENT</h3>
+          </div>
+          <div class="row">
+            <h3 class="text-center">EVERY FRIDAY @<br class="visible-xs"> 6:30PM - 8:30PM</h3>
+          </div>
+          <div class="row">
+            <h3 class="text-center">66 MARGARET</h3>
+            <h3 class="text-center">MAYTOM AVENUE</h3>
+            <h3 class="text-center">DURBAN NORTH</h3>
+          </div>
+          <div class="row">
+            <h3 class="text-center">12 - 18 YEARS OLD</h3>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="olkidsSection" data-anchor="olkids">
+        <div class="container-fluid">
+          <div class="box">
+            <div class="top bg-cover olkids-bg kids-fix">
+              <div class="slider-image-content"><img class="img-responsive centered-block fix-size-img-500" src="/assets/media/img/Pic30_inverted.png"></div>
+            </div>
+            <div class="bottom kids-fix">
+              <h1 class="text-center">ONE LIFE KIDS</h1>
+              <p class="text-center">We are super passionate about all of our kids and believe that helping them discover who Jesus is, it&apos;s absolutely central to them walking out a passionate life with Him no matter what their age is. Games, worship, friends and a fun, new lessons every week. Your kids can be a part of one of our two groups.</p>
+              <div class="row row-fix">
+                <div class="col-xs-6">
+                  <h4 class="text-center">AGES 1-4</h4>
+                  <div class="centered-block"><a href="#"><img class="img-responsive centered-block" src="/assets/media/img/Pic26.JPG"></a></div>
+                </div>
+                <div class="col-xs-6">
+                  <h4 class="text-center">AGES 5-12</h4>
+                  <div class="centered-block"><a href="#"><img class="img-responsive centered-block" src="/assets/media/img/Pic26.JPG"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="olteamsSection" data-anchor="olteams">
+        <div class="container-fluid">
+          <div class="box">
+            <div class="top bg-cover our-teams team-fix"></div>
+            <div class="bottom team-fix">
+              <h1 class="text-center">ONE LIFE TEAMS</h1>
+              <p class="text-center"> Give us a call and we&rsquo;ll tell you how you can be involved in one of our teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="powerofsixtySection" data-anchor="powerofsixty">
+        <div class="container-fluid">
+          <div class="box">
+            <div class="top bg-cover power-of-sixty"></div>
+            <div class="bottom">
+              <h1 class="text-center">POWER OF 60</h1>
+              <p class="text-center">We are encouraging every person to commit 60 minutes of their time into one of our 3 community projects.<br> Sizokhula: Children&rsquo;s Aftercare and Feeding Scheme, Thembela Old Age Home and Golden Hours School for children with special needs.<br> Contact <b>Veronica Webb</b> on <b>082 060 2450</b> to find out how you can be involved in changing someone&rsquo;s life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section orange-bg" id="contactSection" data-anchor="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div>
+              <h1 class="text-center open-sans-regular">Contact One Life Durban</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="margin-10-all">
+              <p class="text-center open-sans-regular text-size-18" id="contactInfo">Feel free to get in touch for any information you need.<br> <a class="text-white" href="mailto:durban@onelifechurch.org.za">durban@onelifechurch.org.za</a><br> <a class="text-white" href="tel:0647346290 ">064 734 6290 </a></p>
+            </div>
+          </div>
+          <ul class="list-inline banner-social-buttons text-center">
+            <li><a class="btn btn-transparent btn-lg" href="mailto:durban@onelifechurch.org.za"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a></li>
+            <li><a class="btn btn-transparent btn-lg" href="tel:0647346290"><i class="fa fa-phone fa-fw"></i> <span class="network-name">Phone</span></a></li>
+          </ul>
+          <footer class="black-bg">
+            <div class="container-fluid open-sans-regular"> &copy; 2017 One Life Church.</div>
+          </footer>
+        </div>
+      </div>
     </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBEVEOrDKI7qFZoOIBrH1KbUb8-SYNZCE&sensor=false"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <!-- Theme JavaScript -->
-    <script src="js/onelife.js"></script>
-</body>
+    <script src="assets/scripts/js/lib.js"></script>
+    <script src="assets/scripts/js/script.js"></script>
+    <script src="assets/scripts/js/onelife.min.js"></script>
+    <script src="assets/scripts/js/analytics.js"></script>
+  </head>
 </html>

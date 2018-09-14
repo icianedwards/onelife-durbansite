@@ -1,0 +1,55 @@
+nav.navbar.navbar-fixed-top.custom-nav
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      |  
+      a.navbar-brand.page-scroll(href='#intro')
+        img#colorized-logo.logoimg(src='/assets/media/img/onelifelogo.jpg', alt='One Life Logo')
+        |  
+        b One Life
+        |  
+        span.hidden-sm.hidden-xs
+          b Church
+        |  
+        span.light Durban
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li(data-menuanchor='intro')
+          a(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', href='#intro') Home
+        li(data-menuanchor='aboutUs')
+          a(data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', href='#about') About Us
+        li
+          a(href='#location', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Location
+        li
+          a(href='#app', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Messages
+        li
+          a(href='#events', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Events
+        li
+          a(href='#giving', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Giving
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+            | Get Involved
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href='#connect', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Connect Groups
+            li
+              a(href='#fusion', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Fusion
+            li
+              a(href='#olkids', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') One Life Kids
+            li
+              a(href='#olteams', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') One Life Teams
+            li
+              a(href='#powerofsixty', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Power of 60
+        li
+          a(href='#contact', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1') Contact Us
+        li
+          a.social-link.facebook(href='https://www.facebook.com/onelifedurban')
+            i.fa.fa-facebook-official(aria-hidden='true')
+        li
+          a.social-link.instagram(href='https://www.instagram.com/onelifedurban/')
+            i.fa.fa-instagram(aria-hidden='true')
