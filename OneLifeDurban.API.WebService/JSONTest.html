@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JSON TEST v1.5</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <script type="text/javascript" src="JSONTest/JSONTest.js"></script>
+    <script type="text/javascript" src="JSONTest/internal/internal.js"></script>
+    <script type="text/javascript" src="JSONTest/internal/jquery.js"></script>
+    <link rel="stylesheet" href="JSONTest/internal/style-light.css" />
+</head>
+<body>
+    <h1>JSON TEST v1.5</h1>
+    <h5 id="hVersion"></h5>
+    <div id="divLoader">
+        <img src="JSONTest/internal/loader.gif" />
+    </div>
+    <div id="divUI" style="display:none;">
+        <select onchange="loadGroup()" id="ddlGroups"></select>
+
+        <select onchange="loadTest()" id="ddlTests"></select>
+        <br /><br />
+        <table>
+            <tr>
+                <td>
+                    Path:
+                </td>
+                <td>
+                    <input type="text" id="txtPath" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Select Header:
+                </td>
+                <td>
+                    <select onchange="loadHeader()" id="ddlHeaders" class="header-dropdown"></select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Header Value:
+                </td>
+                <td>
+                    <input type="text" id="txtHeaders" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        <i id="testComments"></i>
+        <div style="width: 100%; text-align: center; display: none; font-weight: bold" id="divDuration">
+            <span>Duration: </span><span id="lblDuration"></span>ms
+        </div>
+        <br /> <br />
+        <div style="width: 100%;">
+            <button onclick="testJSON()" type="button">SEND DATA</button>
+        </div>
+        <div style="width: 45%; display: inline-block; float: left;">
+            <h2>Request</h2>
+            <textarea id="txtRequest" style="width:100%; height:500px;"> </textarea>
+        </div>
+        <div style="width: 45%; display: inline-block">
+            <h2>Response</h2>
+            <img id="imgFetchLoader" src="JSONTest/internal/ajax-loader.gif" />
+            <textarea id="txtResponse" style="width:100%; height:500px;"> </textarea>
+        </div>
+    </div>
+</body>
+</html>

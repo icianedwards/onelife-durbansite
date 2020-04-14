@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a759bbecfb2f42fba7814f8027971769" Name="Diagram1" ZoomLevel="78">
+        <<<<<<< HEAD
+        
+        
+=======
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<<<<<<< HEAD
+        
+=======
+        
+        
+        
+        
+        
+        
+        <AssociationConnector Association="SDSModel.GroupUser" />
+        <<<<<<< HEAD
+        
+        <EntityTypeShape EntityType="SDSModel.viewCIPCData" Width="1.5" PointX="8.4692197630504236" PointY="5.36297904204716" />
+        <EntityTypeShape EntityType="SDSModel.SYSLOGRequestHistory" Width="1.5" PointX="8.3546747920823634" PointY="30.327282025631185" />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+=======
+        
+        
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; d33778bdb88cd576cb07d62ea6854d4bd8306513
+        
+        
+        
+        
+        
+        
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; d33778bdb88cd576cb07d62ea6854d4bd8306513
+        
+        
+        
+        
+        
+        
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; d33778bdb88cd576cb07d62ea6854d4bd8306513
+        
+        
+        
+        
+        
+        
+        
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; e40ec5f18ce98835438365c345fbe40bbb3387e9
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; de8af2f4910af5e62f080345d07a193aff6b46c9
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

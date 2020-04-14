@@ -1,0 +1,73 @@
+﻿.ErrorText {
+    color: red !important;
+}
+
+h5, h1 {
+    margin: 10px;
+}
+
+#divLoader
+{
+    text-align:center;
+}
+
+#imgFetchLoader
+{
+    float:left;
+    position:absolute;
+    display:none;
+}
+
+body {
+    background-color: white;
+    color: darkblue;
+    font-family: Arial;
+    text-align: center;
+}
+
+textarea {
+    background-color: rgb(240,240,240);
+    color: darkblue;
+    border: 1px dashed darkblue;
+    font-size: 16px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 5px;
+    min-width: 200px;
+    font-size: 20px;
+}
+
+select {
+    background-color: white;
+    color: darkblue;
+    border: 1px dashed darkblue;
+    padding: 20px;
+    min-width: 200px;
+    font-size: 20px;
+}
+select.header-dropdown {
+    padding: 5px;
+    width: 100%;
+}
+
+input {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+    padding: 5px;
+    min-width: 500px;
+    font-size: 12px;
+}
+
+table, tr, td {
+    text-align: left;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
