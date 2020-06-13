@@ -18,11 +18,18 @@
           <Property Name="TotalBytes" Type="int" Nullable="false" />
           <Property Name="HTTPMethod" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="FormParameters" Type="varchar(max)" Nullable="false" />
-          <Property Name="EnvironmentValue" Type="varchar" MaxLength="150" Nullable="false" />
           <Property Name="CreatedDate" Type="datetime" Nullable="false" />
           <Property Name="CreatedByUserName" Type="varchar" MaxLength="150" Nullable="false" />
           <Property Name="UpdatedDate" Type="datetime" Nullable="false" />
           <Property Name="UpdatedByUserName" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="PersonIdentifier" Type="varchar" MaxLength="50" />
+          <Property Name="RequestFormObject" Type="varchar" MaxLength="150" />
+          <Property Name="UserEnvironment" Type="varchar" MaxLength="150" />
+          <Property Name="UIVersion" Type="varchar" MaxLength="150" />
+          <Property Name="DeviceUUID" Type="varchar" MaxLength="50" />
+          <Property Name="LoginGUID" Type="varchar" MaxLength="50" />
+          <Property Name="IsLoginGUIDExtracted" Type="bit" />
+          <Property Name="IsMessageUpdatedWithLoginGUID" Type="bit" />
         </EntityType>
         <EntityContainer Name="SDSModelStoreContainer">
           <EntitySet Name="SYSLOGRequestHistory" EntityType="Self.SYSLOGRequestHistory" Schema="dbo" store:Type="Tables" />
@@ -51,7 +58,14 @@
           <Property Name="CreatedByUserName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
           <Property Name="UpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="UpdatedByUserName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
-          <Property Name="EnvironmentValue" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="PersonIdentifier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RequestFormObject" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="UserEnvironment" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="UIVersion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="DeviceUUID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LoginGUID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsLoginGUIDExtracted" Type="Boolean" />
+          <Property Name="IsMessageUpdatedWithLoginGUID" Type="Boolean" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -62,7 +76,14 @@
           <EntitySetMapping Name="SYSLOGRequestHistories">
             <EntityTypeMapping TypeName="SDSModel.SYSLOGRequestHistory">
               <MappingFragment StoreEntitySet="SYSLOGRequestHistory">
-                <ScalarProperty Name="EnvironmentValue" ColumnName="EnvironmentValue" />
+                <ScalarProperty Name="IsMessageUpdatedWithLoginGUID" ColumnName="IsMessageUpdatedWithLoginGUID" />
+                <ScalarProperty Name="IsLoginGUIDExtracted" ColumnName="IsLoginGUIDExtracted" />
+                <ScalarProperty Name="LoginGUID" ColumnName="LoginGUID" />
+                <ScalarProperty Name="DeviceUUID" ColumnName="DeviceUUID" />
+                <ScalarProperty Name="UIVersion" ColumnName="UIVersion" />
+                <ScalarProperty Name="UserEnvironment" ColumnName="UserEnvironment" />
+                <ScalarProperty Name="RequestFormObject" ColumnName="RequestFormObject" />
+                <ScalarProperty Name="PersonIdentifier" ColumnName="PersonIdentifier" />
                 <ScalarProperty Name="UpdatedByUserName" ColumnName="UpdatedByUserName" />
                 <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
                 <ScalarProperty Name="CreatedByUserName" ColumnName="CreatedByUserName" />

@@ -27,6 +27,13 @@ namespace OneLifeDurban.API.DataAccess
         public string CreatedByUserName { get; set; }
         public System.DateTime UpdatedDate { get; set; }
         public string UpdatedByUserName { get; set; }
-        public string EnvironmentValue { get; set; }
+        public string PersonIdentifier { get; set; }
+        public string RequestFormObject { get; set; }
+        public string UserEnvironment { get; set; }
+        public string UIVersion { get; set; }
+        public string DeviceUUID { get; set; }
+        public string LoginGUID { get; set; }
+        public Nullable<bool> IsLoginGUIDExtracted { get; set; }
+        public Nullable<bool> IsMessageUpdatedWithLoginGUID { get; set; }
     }
 }

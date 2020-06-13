@@ -233,10 +233,6 @@
     <Content Include="JSONTest\modules\Compliance-Reporting.js" />
     <Content Include="JSONTest\modules\SDSAdmin-Reporting.js" />
     <Content Include="JSONTest\modules\_template.js" />
-    <Content Include="media\Adults_20200322_HQ.mp4" />
-    <Content Include="media\Adults_20200322_LQ.mp4" />
-    <Content Include="media\Kids_20200322_HQ.mp4" />
-    <Content Include="media\Kids_20200322_LQ.mp4" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -262,6 +258,7 @@
     <Compile Include="Classes\JsonNetResult.cs" />
     <Compile Include="Controllers\DevelopmentTesting\DevelopmentTestingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SDCSGeneral\ResourceServiceController.cs" />
     <Compile Include="Controllers\SDCSGeneral\MediaServiceController.cs" />
     <Compile Include="Controllers\SDCSGeneral\SDCSGeneralController.cs" />
     <Compile Include="Controllers\Security\AuthenticationServiceController.cs" />
@@ -293,6 +290,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="media\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OneLifeDurban.API.DataAccess\OneLifeDurban.API.DataAccess.csproj">

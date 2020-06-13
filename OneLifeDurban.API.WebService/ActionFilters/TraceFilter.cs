@@ -43,7 +43,10 @@ namespace OneLifeDurban.API.WebService.ActionFilters
                 GeneralLogic.WriteRequestLog(IPAddress, userAgent, url, queryString, totalBytes, httpMethod, parameter, 
                     userName, userId, userGUID, environment);
             }
-            catch { }
+            catch
+            {
+                throw;
+            }
         }
 
         public override void OnResultExecuted(ResultExecutedContext filterContext)

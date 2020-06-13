@@ -24,7 +24,7 @@ namespace OneLifeDurban.API.Logic
                         HTTPMethod = httpMethod,
                         FormParameters = parameters,
                         SystemUserGUID = (userGUID ?? ""),
-                        EnvironmentValue = environment
+                        UserEnvironment = environment
                     });
                     dm.SaveChanges();
                 }

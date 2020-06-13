@@ -12,17 +12,25 @@ namespace OneLifeDurban.API.WebService.Controllers
 {
     [AuthenticationFilter(IsOpenMethod = true)]
     [TraceFilter]
-    [RoutePrefix("MediaService")]
-    public class MediaServiceController : Controller
+    [RoutePrefix("ResourceService")]
+    public class ResourceServiceController : Controller
     {
         [HttpGet]
         //[Route("DownloadFile")]
         public ActionResult DownloadFile(string id)
         {
             //var folder = System.Configuration.ConfigurationManager.AppSettings["MediaFolder"];
+            if (id == "SocialMediaPostImage2.pdf")
+            {
+                id = "SocialMediaPostImage2.jpg";
+            }
+            if (id == "SocialMediaPostImage1.pdf")
+            {
+                id = "SocialMediaPostImage1.jpg";
+            }
             var folder = Server.MapPath("/media");
             var file = Path.Combine(folder, $"{id}.mp4");
-            if (!id.Contains("."))
+            if (id.Contains("."))
             {
                 file = Path.Combine(folder, id);
             }
@@ -38,10 +46,8 @@ namespace OneLifeDurban.API.WebService.Controllers
                 FileName = filename,
                 Inline = false
             };
-            Response.AddHeader(
-                "Content-Disposition", $"attachment; filename=\"{filename}\"");
             //System.IO.File.Delete(decryptedFileName);
-            //Response.AppendHeader("Content-Disposition", cd.ToString());
+            Response.AppendHeader("Content-Disposition", cd.ToString());
             return File(filedata, contentType);
         }
         public static string GetMimeType(string extension)
